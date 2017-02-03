@@ -5,6 +5,7 @@ ruby '2.3.1'
 gem 'rails', '4.2.6'
 gem 'pg', '~> 0.19.0'
 gem 'jbuilder', '~> 2.0'
+gem 'sprig', '~> 0.2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Assets

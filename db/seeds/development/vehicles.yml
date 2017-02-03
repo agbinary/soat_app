@@ -1,0 +1,19 @@
+records:
+  - sprig_id: 1
+    description: 'MOTOS'
+  - sprig_id: 2
+    description: 'CAMPEROS Y CAMIONETAS'
+  - sprig_id: 3
+    description: 'CARGA O MIXTO'
+  - sprig_id: 4
+    description: 'OFICIALES ESPECIALES'
+  - sprig_id: 5
+    description: 'AUTOS FAMILIARES'
+  - sprig_id: 6
+    description: 'VEHICULOS PARA 6 O MAS PASAJEROS'
+  - sprig_id: 7
+    description: 'AUTOS DE NEGOCIOS Y TAXIS'
+  - sprig_id: 8
+    description: 'BUSES Y BUSETAS DE SERVICIO PUBLICO URBANO'
+  - sprig_id: 9
+    description: 'SERVICIO PUBLICO INTERMUNICIPAL'

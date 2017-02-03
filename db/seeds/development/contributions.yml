@@ -1,0 +1,316 @@
+records:
+  - sprig_id: 1
+    age: ''
+    commercial_rate: 8.26
+    premium_value: 203100
+    fosyga: 101550
+    subtotal_premium_value_fosyga: 304650
+    runt: 1610
+    total_value: 306260
+    subtype_id: "<%= sprig_record(Subtype, 1).id %>"
+  - sprig_id: 2
+    age: ''
+    commercial_rate: 11.09
+    premium_value: 272700
+    fosyga: 136350
+    subtotal_premium_value_fosyga: 409050
+    runt: 1610
+    total_value: 410660
+    subtype_id: "<%= sprig_record(Subtype, 2).id %>"
+  - sprig_id: 3
+    age: ''
+    commercial_rate: 12.51
+    premium_value: 307600
+    fosyga: 153800
+    subtotal_premium_value_fosyga: 461400
+    runt: 1610
+    total_value: 463010
+    subtype_id: "<%= sprig_record(Subtype, 3).id %>"
+  - sprig_id: 4
+    age: ''
+    commercial_rate: 12.51
+    premium_value: 307600
+    fosyga: 153800
+    subtotal_premium_value_fosyga: 461400
+    runt: 1610
+    total_value: 463010
+    subtype_id: "<%= sprig_record(Subtype, 4).id %>"
+  - sprig_id: 5
+    age: '0 a 9 años'
+    commercial_rate: 13.29
+    premium_value: 326800
+    fosyga: 163400
+    subtotal_premium_value_fosyga: 490200
+    runt: 1610
+    total_value: 491810
+    subtype_id: "<%= sprig_record(Subtype, 5).id %>"
+  - sprig_id: 6
+    age: '10 años o mas'
+    commercial_rate: 15.99
+    premium_value: 393200
+    fosyga: 196600
+    subtotal_premium_value_fosyga: 589800
+    runt: 1610
+    total_value: 591410
+    subtype_id: "<%= sprig_record(Subtype, 5).id %>"
+  - sprig_id: 7
+    age: '0 a 9 años'
+    commercial_rate: 15.88
+    premium_value: 390400
+    fosyga: 195200
+    subtotal_premium_value_fosyga: 585600
+    runt: 1610
+    total_value: 587210
+    subtype_id: "<%= sprig_record(Subtype, 6).id %>"
+  - sprig_id: 8
+    age: '10 años o mas'
+    commercial_rate: 18.82
+    premium_value: 462700
+    fosyga: 231350
+    subtotal_premium_value_fosyga: 694050
+    runt: 1610
+    total_value: 695660
+    subtype_id: "<%= sprig_record(Subtype, 6).id %>"
+  - sprig_id: 9
+    age: '0 a 9 años'
+    commercial_rate: 18.63
+    premium_value: 458100
+    fosyga: 229050
+    subtotal_premium_value_fosyga: 687150
+    runt: 1610
+    total_value: 688760
+    subtype_id: "<%= sprig_record(Subtype, 7).id %>"
+  - sprig_id: 10
+    age: '10 años o mas'
+    commercial_rate: 21.39
+    premium_value: 525900
+    fosyga: 262950
+    subtotal_premium_value_fosyga: 788850
+    runt: 1610
+    total_value: 790460
+    subtype_id: "<%= sprig_record(Subtype, 7).id %>"
+  - sprig_id: 11
+    age: ''
+    commercial_rate: 14.90
+    premium_value: 366300
+    fosyga: 183150
+    subtotal_premium_value_fosyga: 549450
+    runt: 1610
+    total_value: 551060
+    subtype_id: "<%= sprig_record(Subtype, 8).id %>"
+  - sprig_id: 12
+    age: ''
+    commercial_rate: 21.53
+    premium_value: 592400
+    fosyga: 264700
+    subtotal_premium_value_fosyga: 794100
+    runt: 1610
+    total_value: 795710
+    subtype_id: "<%= sprig_record(Subtype, 9).id %>"
+  - sprig_id: 13
+    age: ''
+    commercial_rate: 27.23
+    premium_value: 669600
+    fosyga: 334800
+    subtotal_premium_value_fosyga: 1004400
+    runt: 1610
+    total_value: 1006010
+    subtype_id: "<%= sprig_record(Subtype, 10).id %>"
+  - sprig_id: 14
+    age: ''
+    commercial_rate: 16.77
+    premium_value: 412300
+    fosyga: 206150
+    subtotal_premium_value_fosyga: 618450
+    runt: 1610
+    total_value: 620060
+    subtype_id: "<%= sprig_record(Subtype, 11).id %>"
+  - sprig_id: 15
+    age: ''
+    commercial_rate: 21.15
+    premium_value: 520000
+    fosyga: 260000
+    subtotal_premium_value_fosyga: 780000
+    runt: 1610
+    total_value: 781610
+    subtype_id: "<%= sprig_record(Subtype, 12).id %>"
+  - sprig_id: 16
+    age: ''
+    commercial_rate: 25.36
+    premium_value: 623600
+    fosyga: 311800
+    subtotal_premium_value_fosyga: 935400
+    runt: 1610
+    total_value: 937010
+    subtype_id: "<%= sprig_record(Subtype, 13).id %>"
+  - sprig_id: 17
+    age: '0 a 9 años'
+    commercial_rate: 7.48
+    premium_value: 183900
+    fosyga: 91950
+    subtotal_premium_value_fosyga: 275850
+    runt: 1610
+    total_value: 277460
+    subtype_id: "<%= sprig_record(Subtype, 14).id %>"
+  - sprig_id: 18
+    age: '10 años o mas'
+    commercial_rate: 9.93
+    premium_value: 244100
+    fosyga: 122050
+    subtotal_premium_value_fosyga: 366150
+    runt: 1610
+    total_value: 367760
+    subtype_id: "<%= sprig_record(Subtype, 14).id %>"
+  - sprig_id: 19
+    age: '0 a 9 años'
+    commercial_rate: 9.12
+    premium_value: 224200
+    fosyga: 112100
+    subtotal_premium_value_fosyga: 336300
+    runt: 1610
+    total_value: 337910
+    subtype_id: "<%= sprig_record(Subtype, 15).id %>"
+  - sprig_id: 20
+    age: '10 años o mas'
+    commercial_rate: 11.35
+    premium_value: 279100
+    fosyga: 139550
+    subtotal_premium_value_fosyga: 418650
+    runt: 1610
+    total_value: 420260
+    subtype_id: "<%= sprig_record(Subtype, 15).id %>"
+  - sprig_id: 21
+    age: '0 a 9 años'
+    commercial_rate: 10.66
+    premium_value: 262100
+    fosyga: 131050
+    subtotal_premium_value_fosyga: 393150
+    runt: 1610
+    total_value: 394760
+    subtype_id: "<%= sprig_record(Subtype, 16).id %>"
+  - sprig_id: 22
+    age: '10 años o mas'
+    commercial_rate: 12.65
+    premium_value: 311000
+    fosyga: 155500
+    subtotal_premium_value_fosyga: 466500
+    runt: 1610
+    total_value: 468110
+    subtype_id: "<%= sprig_record(Subtype, 16).id %>"
+  - sprig_id: 23
+    age: '0 a 9 años'
+    commercial_rate: 13.37
+    premium_value: 328700
+    fosyga: 164350
+    subtotal_premium_value_fosyga: 493050
+    runt: 1610
+    total_value: 494660
+    subtype_id: "<%= sprig_record(Subtype, 17).id %>"
+  - sprig_id: 24
+    age: '10 años o mas'
+    commercial_rate: 17.08
+    premium_value: 420000
+    fosyga: 210000
+    subtotal_premium_value_fosyga: 630000
+    runt: 1610
+    total_value: 631610
+    subtype_id: "<%= sprig_record(Subtype, 17).id %>"
+  - sprig_id: 25
+    age: '0 a 9 años'
+    commercial_rate: 17.91
+    premium_value: 440400
+    fosyga: 220200
+    subtotal_premium_value_fosyga: 660600
+    runt: 1610
+    total_value: 662210
+    subtype_id: "<%= sprig_record(Subtype, 18).id %>"
+  - sprig_id: 26
+    age: '10 años o mas'
+    commercial_rate: 21.51
+    premium_value: 528900
+    fosyga: 264450
+    subtotal_premium_value_fosyga: 793350
+    runt: 1610
+    total_value: 794960
+    subtype_id: "<%= sprig_record(Subtype, 18).id %>"
+  - sprig_id: 27
+    age: '0 a 9 años'
+    commercial_rate: 9.28
+    premium_value: 228200
+    fosyga: 114100
+    subtotal_premium_value_fosyga: 342300
+    runt: 1610
+    total_value: 343910
+    subtype_id: "<%= sprig_record(Subtype, 19).id %>"
+  - sprig_id: 28
+    age: '10 años o mas'
+    commercial_rate: 11.60
+    premium_value: 285200
+    fosyga: 142600
+    subtotal_premium_value_fosyga: 427800
+    runt: 1610
+    total_value: 429410
+    subtype_id: "<%= sprig_record(Subtype, 19).id %>"
+  - sprig_id: 29
+    age: '0 a 9 años'
+    commercial_rate: 11.54
+    premium_value: 283700
+    fosyga: 141850
+    subtotal_premium_value_fosyga: 425550
+    runt: 1610
+    total_value: 427160
+    subtype_id: "<%= sprig_record(Subtype, 20).id %>"
+  - sprig_id: 30
+    age: '10 años o mas'
+    commercial_rate: 14.27
+    premium_value: 350900
+    fosyga: 175450
+    subtotal_premium_value_fosyga: 526350
+    runt: 1610
+    total_value: 527960
+    subtype_id: "<%= sprig_record(Subtype, 20).id %>"
+  - sprig_id: 31
+    age: '0 a 9 años'
+    commercial_rate: 14.90
+    premium_value: 366300
+    fosyga: 183150
+    subtotal_premium_value_fosyga: 549450
+    runt: 1610
+    total_value: 551060
+    subtype_id: "<%= sprig_record(Subtype, 21).id %>"
+  - sprig_id: 32
+    age: '10 años o mas'
+    commercial_rate: 17.49
+    premium_value: 430000
+    fosyga: 215000
+    subtotal_premium_value_fosyga: 645000
+    runt: 1610
+    total_value: 646610
+    subtype_id: "<%= sprig_record(Subtype, 21).id %>"
+  - sprig_id: 33
+    age: ''
+    commercial_rate: 21.81
+    premium_value: 563300
+    fosyga: 268150
+    subtotal_premium_value_fosyga: 804450
+    runt: 1610
+    total_value: 806060
+    subtype_id: "<%= sprig_record(Subtype, 22).id %>"
+  - sprig_id: 34
+    age: ''
+    commercial_rate: 22.01
+    premium_value: 541200
+    fosyga: 270600
+    subtotal_premium_value_fosyga: 811800
+    runt: 1610
+    total_value: 813410
+    subtype_id: "<%= sprig_record(Subtype, 23).id %>"
+  - sprig_id: 35
+    age: ''
+    commercial_rate: 31.96
+    premium_value: 785900
+    fosyga: 392950
+    subtotal_premium_value_fosyga: 1178850
+    runt: 1610
+    total_value: 1180460
+    subtype_id: "<%= sprig_record(Subtype, 24).id %>"
