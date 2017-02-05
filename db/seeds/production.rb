@@ -1,3 +1,3 @@
 include Sprig::Helpers
 
-sprig [Vehicle, Subtype, Contribution]
+sprig [VehicleClass, Subtype, Contribution]

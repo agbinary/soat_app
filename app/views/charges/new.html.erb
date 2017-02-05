@@ -1,0 +1,36 @@
+<%= form_tag charges_path do %>
+  <%= hidden_field_tag(:soat, @soat.id) %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <table>
+      <tbody>
+        <tr>
+          <td>Valor Prima:</td>
+          <td><%= number_to_currency(@soat.premium_value) %></td>
+        </tr>
+        <tr>
+          <td>Fosyga:</td>
+          <td><%= number_to_currency(@soat.fosyga) %></td>
+        </tr>
+        <tr>
+          <td>Runt:</td>
+          <td><%= number_to_currency(@soat.runt) %></td>
+        </tr>
+        <tr>
+          <td>Total:</td>
+          <td><%= number_to_currency(@soat.total_value) %></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  <br><br>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
+          data-description="Pago del Soat"
+          data-amount="<% @soat.total_value %>"
+          data-locale="cop"></script>
+<% end %>

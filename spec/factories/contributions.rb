@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :contribution do
-    age { Faker::Lorem.word }
     commercial_rate { Faker::Number.decimal(2) }
     premium_value { Faker::Number.number(5) }
     fosyga { Faker::Number.number(5) }

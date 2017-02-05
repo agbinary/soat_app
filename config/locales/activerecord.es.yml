@@ -1,0 +1,21 @@
+es:
+  activerecord:
+    models:
+      user: 'Usuario'
+      vehicle: 'Vehiculo'
+    attributes:
+      user:
+        identification_type: 'Tipo de Identiticación'
+        identification_number: 'Número de Identificación'
+        name: 'Nombres'
+        surname: 'Apellidos'
+        email: 'Correo electrónico'
+        phone_number: 'Número de Teléfono'
+      vehicle:
+        license_plate: 'Placa'
+        vehicle_class_id: 'Clase de Vehículo'
+        subtype_id: 'Subtipo'
+        contribution_id: 'Contribuciones'
+      soat:
+        start_date: 'Fecha Inicio'
+        end_date: 'Fecha Final'

@@ -1,0 +1,20 @@
+$('#soat_vehicle_vehicle_class_id').val('<%= @vehicle.vehicle_class_id %>');
+$('#soat_vehicle_subtype').val('<%= @vehicle.subtype %>');
+<% if @vehicle.subtype == ""|| @vehicle.subtype.nil? %>
+  $('#soat_vehicle_subtype').addClass('hide')
+  $('.subtype-label').addClass('hide')
+<% else %>
+  $('#soat_vehicle_subtype').removeClass('hide')
+  $('.subtype-label').removeClass('hide')
+<% end %>
+$('#soat_vehicle_age').val('<%= @vehicle.age %>');
+<% if @vehicle.age == "" || @vehicle.age.nil? %>
+  $('#soat_vehicle_age').addClass('hide')
+  $('.age-label').addClass('hide')
+<% else %>
+  $('#soat_vehicle_age').removeClass('hide')
+  $('.age-label').removeClass('hide')
+<% end %>
+<% if @vehicle.return_soat.any? %>
+  alert("Este vehículo ya tiene un soat vigente");
+<% end %>

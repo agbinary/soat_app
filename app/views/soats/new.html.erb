@@ -1,0 +1,9 @@
+<%= form_for @soat, remote: true do |f| %>
+  <%= f.fields_for @soat.user do |user_form| %>
+    <%= render 'users/new', f: user_form %>
+  <% end %>
+  <%= f.fields_for @soat.vehicle do |vehicle_form| %>
+    <%= render 'vehicles/new', f: vehicle_form %>
+  <% end %>
+  <%= f.submit "Ir al Pago", class: 'btn btn-primary' %>
+<% end %>

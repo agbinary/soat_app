@@ -2,7 +2,8 @@ class CreateContributions < ActiveRecord::Migration
   def change
     create_table :contributions do |t|
       t.belongs_to :subtype, null: false, index: true, foreign_key: true
-      t.string :age
+      t.integer :min_age
+      t.integer :max_age
       t.float :commercial_rate, null: false
       t.integer :premium_value, null: false
       t.integer :fosyga, null: false

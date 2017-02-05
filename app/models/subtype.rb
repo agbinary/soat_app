@@ -1,6 +1,6 @@
 class Subtype < ActiveRecord::Base
   has_many :contributions
-  belongs_to :vehicle
+  belongs_to :vehicle_class
 
-  validates :vehicle_id, presence: true
+  validates :vehicle_class_id, presence: true
 end

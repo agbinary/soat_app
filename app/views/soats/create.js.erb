@@ -1,0 +1,9 @@
+<% if !custom_materialize_error(@user).nil? %>
+  alert('<%= escape_javascript custom_materialize_error(@user) %>');
+<% elsif !custom_materialize_error(@vehicle).nil? %>
+  alert('<%= escape_javascript custom_materialize_error(@vehicle) %>');
+<% elsif !custom_materialize_error(@soat).nil? %>
+  alert('<%= escape_javascript custom_materialize_error(@soat) %>');
+<% else %>
+  location.href = '<%= new_charge_path(soat: @soat) %>'
+<% end %>

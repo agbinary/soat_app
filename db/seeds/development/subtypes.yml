@@ -1,73 +1,93 @@
 records:
   - sprig_id: 1
-    description: 'Menos de 100 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 1).id %>"
+    min: 0
+    max: 99
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
   - sprig_id: 2
-    description: 'De 100 a 200 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 1).id %>"
+    min: 100
+    max: 200
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
   - sprig_id: 3
-    description: 'Mas de 200 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 1).id %>"
+    min: 201
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
   - sprig_id: 4
-    description: 'Motocarros'
-    vehicle_id: "<%= sprig_record(Vehicle, 1).id %>"
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
   - sprig_id: 5
-    description: 'Menos de 1500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 2).id %>"
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
   - sprig_id: 6
-    description: '1500 a 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 2).id %>"
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
   - sprig_id: 7
-    description: 'mas de 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 2).id %>"
+    min: 0
+    max: 4
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
   - sprig_id: 8
-    description: 'Menos de 5 toneladas'
-    vehicle_id: "<%= sprig_record(Vehicle, 3).id %>"
+    min: 5
+    max: 15
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
   - sprig_id: 9
-    description: 'De 5 a 15 toneladas'
-    vehicle_id: "<%= sprig_record(Vehicle, 3).id %>"
+    min: 16
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
   - sprig_id: 10
-    description: 'Mas de 15 toneladas'
-    vehicle_id: "<%= sprig_record(Vehicle, 3).id %>"
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
   - sprig_id: 11
-    description: 'Menos de 1500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 4).id %>"
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
   - sprig_id: 12
-    description: '1500 a 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 4).id %>"
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
   - sprig_id: 13
-    description: 'Mas de 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 4).id %>"
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
   - sprig_id: 14
-    description: 'Menos de 1500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 5).id %>"
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
   - sprig_id: 15
-    description: '1500 a 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 5).id %>"
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
   - sprig_id: 16
-    description: 'Mas de 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 5).id %>"
+    min: 0
+    max: 2499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 6).id %>"
   - sprig_id: 17
-    description: 'Menos de 2500'
-    vehicle_id: "<%= sprig_record(Vehicle, 6).id %>"
+    min: 2500
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 6).id %>"
   - sprig_id: 18
-    description: '2500 o mas'
-    vehicle_id: "<%= sprig_record(Vehicle, 6).id %>"
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
   - sprig_id: 19
-    description: 'Menos de 1500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 7).id %>"
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
   - sprig_id: 20
-    description: '1500 a 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 7).id %>"
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
   - sprig_id: 21
-    description: 'Mas de 2500 c.c.'
-    vehicle_id: "<%= sprig_record(Vehicle, 7).id %>"
+    min: ''
+    max: ''
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 8).id %>"
   - sprig_id: 22
-    description: ''
-    vehicle_id: "<%= sprig_record(Vehicle, 8).id %>"
+    min: 0
+    max: 9
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 9).id %>"
   - sprig_id: 23
-    description: 'Menor de 10 pasajeros'
-    vehicle_id: "<%= sprig_record(Vehicle, 9).id %>"
-  - sprig_id: 24
-    description: '10 o mas pasajeros'
-    vehicle_id: "<%= sprig_record(Vehicle, 9).id %>"
+    min: 10
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 9).id %>"

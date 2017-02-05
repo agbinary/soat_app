@@ -1,0 +1,17 @@
+$(".subtype-field").val('');
+$('.age-field').val('');
+$("label[for='subtype-label']").text('<%= @label_subtypes %>');
+<% if @vehicle_class != 8 %>
+  $('.subtype-label').removeClass('hide');
+  $(".subtype-field").removeClass('hide');
+<% else %>
+  $('.subtype-label').addClass('hide');
+  $(".subtype-field").addClass('hide');
+<% end %>
+<% if @ages == true %>
+  $('.age-field').removeClass('hide');
+  $('.age-label').removeClass('hide');
+<% else %>
+  $('.age-field').addClass('hide');
+  $('.age-label').addClass('hide');
+<% end %>

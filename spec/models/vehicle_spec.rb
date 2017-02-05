@@ -6,10 +6,12 @@ RSpec.describe Vehicle, type: :model do
   end
 
   describe "ActiveModel validations" do
-    it { should validate_presence_of(:description) }
+    it { should validate_presence_of(:license_plate) }
+    it { should validate_presence_of(:vehicle_class_id) }
   end
 
   describe "ActiveRecord associations" do
-    it { should have_many(:subtypes) }
+    it { should have_many(:soats) }
+    it { should belong_to(:vehicle_class) }
   end
 end

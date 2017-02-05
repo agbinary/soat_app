@@ -6,11 +6,11 @@ RSpec.describe Subtype, type: :model do
   end
 
   describe "ActiveModel validations" do
-    it { should validate_presence_of(:vehicle_id) }
+    it { should validate_presence_of(:vehicle_class_id) }
   end
 
   describe "ActiveRecord associations" do
     it { should have_many(:contributions) }
-    it { should belong_to(:vehicle) }
+    it { should belong_to(:vehicle_class) }
   end
 end

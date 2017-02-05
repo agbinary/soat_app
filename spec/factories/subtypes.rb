@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :subtype do
-    description { Faker::Lorem.word }
-    association :vehicle
+    min 0
+    max 5
+    association :vehicle_class
   end
 end

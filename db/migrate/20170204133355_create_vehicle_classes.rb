@@ -1,6 +1,6 @@
-class CreateVehicles < ActiveRecord::Migration
+class CreateVehicleClasses < ActiveRecord::Migration
   def change
-    create_table :vehicles do |t|
+    create_table :vehicle_classes do |t|
       t.string :description, null: false
 
       t.timestamps null: false
