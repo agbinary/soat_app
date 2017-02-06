@@ -3,6 +3,7 @@ class VehiclesController < ApplicationController
     vehicle = Vehicle.bring_if_exist(params[:license_plate])
     if vehicle.any?
       @vehicle = vehicle.first
+      @label_subtypes = VehicleClass.return_subtype(@vehicle.vehicle_class_id)
     else
       @vehicle = Vehicle.new
     end

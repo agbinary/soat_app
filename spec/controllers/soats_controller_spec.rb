@@ -12,4 +12,20 @@ RSpec.describe SoatsController, type: :controller do
       expect(response).to render_template :new
     end
   end
+
+  before :each do
+    @soat = create(:soat)
+  end
+
+  describe "get show" do
+    it "assigns the requested soat" do
+      get :show, id: @soat
+      expect(assigns(:soat)).to eq @soat
+    end
+
+    it "renders the :show template" do
+      get :show, id: @soat
+      expect(response).to render_template :show
+    end
+  end
 end

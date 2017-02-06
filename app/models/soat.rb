@@ -1,4 +1,7 @@
 class Soat < ActiveRecord::Base
+  scope :in_force, -> (date) { where(':today BETWEEN start_date and end_date', today: date) }
+  scope :paid, -> { where pay: true }
+
   belongs_to :user
   belongs_to :vehicle
 
@@ -34,7 +37,7 @@ class Soat < ActiveRecord::Base
   end
 
   def update_pay
-    self.pay == true
+    self.toggle!(:pay)
   end
 
   def deliver_email_for_pay

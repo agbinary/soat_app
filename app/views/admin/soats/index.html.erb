@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>Soats</h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Email</th>
+      <th>Fecha de Compra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @soats.each do |soat| %>
+      <tr>
+        <td><%= soat.user.name %></td>
+        <td><%= soat.user.surname %></td>
+        <td><%= soat.user.email %></td>
+        <td><%= link_to (l soat.created_at, format: :short), admin_soat_path(soat) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

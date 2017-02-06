@@ -7,7 +7,9 @@ gem 'pg', '~> 0.19.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sprig', '~> 0.2.0'
 gem 'has_scope', '~> 0.7.0'
-gem 'stripe'
+gem 'stripe', '~> 1.58'
+gem 'wicked_pdf', '~> 1.1'
+gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Assets
@@ -19,6 +21,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Authentication
+gem 'devise', '~> 4.2'
+gem 'devise-bootstrap-views', '~> 0.0.5'
 
 group :development do
   gem 'web-console', '~> 2.0'
@@ -42,4 +46,5 @@ end
 
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
+  gem 'wkhtmltopdf-heroku', '~> 2.12', '>= 2.12.3.0'
 end

@@ -3,6 +3,10 @@ es:
     models:
       user: 'Usuario'
       vehicle: 'Vehiculo'
+      vehicle_class: 'Clase de Vehiculo'
+      subtype: 'Subtipo'
+      contribution: 'Contribuciones'
+      soat: 'Soat'
     attributes:
       user:
         identification_type: 'Tipo de Identiticación'
@@ -14,8 +18,14 @@ es:
       vehicle:
         license_plate: 'Placa'
         vehicle_class_id: 'Clase de Vehículo'
-        subtype_id: 'Subtipo'
-        contribution_id: 'Contribuciones'
+        subtype: 'Subtipo'
+        age: 'Edad'
       soat:
+        user_id: 'Usuario'
+        vehicle_id: 'Vehiculo'
         start_date: 'Fecha Inicio'
         end_date: 'Fecha Final'
+        premium_value: 'Valor Prima'
+        fosyga: 'Fosyga'
+        runt: 'Runt'
+        total_value: 'Total Valor'

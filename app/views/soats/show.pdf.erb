@@ -5,7 +5,7 @@
       <li>Placa: <%= @soat.vehicle.license_plate %></li>
     </ul>
     <br>
-    <table>
+    <table width="100%">
       <tbody>
         <tr>
           <td>Valor Prima:</td>
@@ -29,12 +29,10 @@
     Coberturas Ofrecidas:<br><br>
     <ul>
       <li>Muerte y gastos funerarios: 750 SMLDV</li>
-      <li>Gastos médicos: 800 SMLDV</li>
+      <li>Gastos medicos: 800 SMLDV</li>
       <li>Incapacidad permanente: 180 SMLDV</li>
       <li>Gastos de transporte: 10 SMLDV</li>
     </ul>
     <br></br>
     Tu cobertura va desde <%= @soat.start_date %> hasta <%= @soat.end_date %>
-    <br></br>
-    <%= link_to "Ver PDF", soat_path(@soat, format: :pdf), target: "_blank" %>
 </div>

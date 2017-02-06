@@ -13,7 +13,17 @@
     <div class="header clearfix">
       <nav>
         <ul class="nav nav-pills pull-right">
-          <li role="presentation"><%= link_to 'Iniciar sesion Administrador', '#' %></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Administrador<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <% if admin_signed_in? %>
+                <li><a tabindex="-1" href="#"><%= link_to 'Ver Soats', :admin_soats %></a></li>
+                <li><a tabindex="-1" href="#"><%= link_to 'Cerrar sesion Administrador', :destroy_admin_session, method: :delete %></a></li>
+              <% else %>
+                <li><a tabindex="-1" href="#"><%= link_to 'Iniciar sesion Administrador', :admin_soats %></a></li>
+              <% end %>
+            </ul>
+          </li>
           <li role="presentation"><%= link_to 'Comprar Soat', :new_soat %></li>
         </ul>
       </nav>

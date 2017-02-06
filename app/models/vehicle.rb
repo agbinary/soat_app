@@ -11,7 +11,17 @@ class Vehicle < ActiveRecord::Base
   validates :subtype, numericality: { less_than_or_equal_to: 30000, allow_blank: true }
   validates :age, numericality: { less_than_or_equal_to: 30000, allow_blank: true }
 
+  validate :only_two_soats
+
   def return_soat
-    self.soats.where(':today BETWEEN start_date and end_date', today: Date.today).where(pay: true)
+    self.soats.in_force(Date.today).paid
+  end
+
+  private
+
+  def only_two_soats
+    if self.return_soat.any? && self.soats.in_force(Date.today+1.year+1.day).paid.any?
+      errors.add(:base, "Este vehiculo ya tiene dos soats relacionados")
+    end
   end
 end

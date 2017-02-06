@@ -1,5 +1,6 @@
 $('#soat_vehicle_vehicle_class_id').val('<%= @vehicle.vehicle_class_id %>');
 $('#soat_vehicle_subtype').val('<%= @vehicle.subtype %>');
+$("label[for='subtype-label']").text('<%= @label_subtypes %>');
 <% if @vehicle.subtype == ""|| @vehicle.subtype.nil? %>
   $('#soat_vehicle_subtype').addClass('hide')
   $('.subtype-label').addClass('hide')

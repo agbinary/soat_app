@@ -1,6 +1,8 @@
 <div>
-    El resumen de tu compra:<br><br>
     <ul>
+      <li>Nombre: <%= @soat.user.full_name %></li>
+      <li>Email: <%= @soat.user.email %></li>
+      <li>Telefono: <%= @soat.user.phone_number %></li>
       <li>Clase de Vehiculo: <%= @soat.vehicle.vehicle_class.description %></li>
       <li>Placa: <%= @soat.vehicle.license_plate %></li>
     </ul>
@@ -34,7 +36,7 @@
       <li>Gastos de transporte: 10 SMLDV</li>
     </ul>
     <br></br>
-    Tu cobertura va desde <%= @soat.start_date %> hasta <%= @soat.end_date %>
+    Cobertura va desde <%= @soat.start_date %> hasta <%= @soat.end_date %>
     <br></br>
-    <%= link_to "Ver PDF", soat_path(@soat, format: :pdf), target: "_blank" %>
+    <%= link_to "Atrás", :admin_soats %>
 </div>

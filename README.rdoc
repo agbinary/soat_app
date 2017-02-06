@@ -1,28 +1,24 @@
-== README
+Rails web application for CNI Timer.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
 
-Things you may want to cover:
+* Ruby 2.3.1
+* Rails 4.2.6
+* PostgreSQL 9.4+
 
-* Ruby version
+##
+Run bundle install
 
-* System dependencies
+## Database Setup
+* Add your own `config/database.yml` (Use `config/database.yml.sample` as reference)
+* Add a valid postgresql user/password if needed
+* Create the database by running `rake db:create`
+* Crate the tables by running `rake db:migrate`
+* Run seeds by running `rake db:seed`
+* Run the server with `rails s`
 
-* Configuration
+## Running the test suite
+Just run `bundle exec rspec` command from root application folder.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Deployment instructions
+Configure development server connection with Heroku

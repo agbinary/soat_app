@@ -37,6 +37,16 @@ class SoatsController < ApplicationController
     respond_to { |format| format.js }
   end
 
+  def show
+    @soat = Soat.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "soat_#{@soat.id}_#{DateTime.now}"
+      end
+    end
+  end
+
   private
 
   def soat_params

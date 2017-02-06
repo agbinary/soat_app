@@ -1,0 +1,93 @@
+records:
+  - sprig_id: 1
+    min: 0
+    max: 99
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
+  - sprig_id: 2
+    min: 100
+    max: 200
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
+  - sprig_id: 3
+    min: 201
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 1).id %>"
+  - sprig_id: 4
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
+  - sprig_id: 5
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
+  - sprig_id: 6
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 2).id %>"
+  - sprig_id: 7
+    min: 0
+    max: 4
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
+  - sprig_id: 8
+    min: 5
+    max: 15
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
+  - sprig_id: 9
+    min: 16
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 3).id %>"
+  - sprig_id: 10
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
+  - sprig_id: 11
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
+  - sprig_id: 12
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 4).id %>"
+  - sprig_id: 13
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
+  - sprig_id: 14
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
+  - sprig_id: 15
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 5).id %>"
+  - sprig_id: 16
+    min: 0
+    max: 2499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 6).id %>"
+  - sprig_id: 17
+    min: 2500
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 6).id %>"
+  - sprig_id: 18
+    min: 0
+    max: 1499
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
+  - sprig_id: 19
+    min: 1500
+    max: 2500
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
+  - sprig_id: 20
+    min: 2501
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 7).id %>"
+  - sprig_id: 21
+    min: ''
+    max: ''
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 8).id %>"
+  - sprig_id: 22
+    min: 0
+    max: 9
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 9).id %>"
+  - sprig_id: 23
+    min: 10
+    max: 30000
+    vehicle_class_id: "<%= sprig_record(VehicleClass, 9).id %>"
