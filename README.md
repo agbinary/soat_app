@@ -1,4 +1,4 @@
-Rails web application for CNI Timer.
+Rails web application for calcu
 
 ## Dependencies
 
@@ -7,7 +7,7 @@ Rails web application for CNI Timer.
 * PostgreSQL 9.4+
 
 ## Gems
-Run bundle install
+Run `bundle install`
 
 ## Database Setup
 * Add your own `config/database.yml` (Use `config/database.yml.sample` as reference)
@@ -21,10 +21,10 @@ Run bundle install
 Feel free to change the keys in secret.yml
 
 ## Emails
-You can see the emails of environment development in http://localhost:3000/letter_opener
+You can see the emails of environment development in `http://localhost:3000/letter_opener`
 
 ## Running the test suite
 Just run `bundle exec rspec` command from root application folder.
 
 ## Deployment instructions
-Configure development server connection with Heroku
+Configure development server connection with Heroku, url in description
