@@ -1,42 +1,46 @@
-<div>
-    <ul>
-      <li>Nombre: <%= @soat.user.full_name %></li>
-      <li>Email: <%= @soat.user.email %></li>
-      <li>Telefono: <%= @soat.user.phone_number %></li>
-      <li>Clase de Vehiculo: <%= @soat.vehicle.vehicle_class.description %></li>
-      <li>Placa: <%= @soat.vehicle.license_plate %></li>
-    </ul>
-    <br>
-    <table>
-      <tbody>
-        <tr>
-          <td>Valor Prima:</td>
-          <td><%= number_to_currency(@soat.premium_value) %></td>
-        </tr>
-        <tr>
-          <td>Fosyga:</td>
-          <td><%= number_to_currency(@soat.fosyga) %></td>
-        </tr>
-        <tr>
-          <td>Runt:</td>
-          <td><%= number_to_currency(@soat.runt) %></td>
-        </tr>
-        <tr>
-          <td>Total:</td>
-          <td><%= number_to_currency(@soat.total_value) %></td>
-        </tr>
-      </tbody>
-    </table>
-    <br><br>
-    Coberturas Ofrecidas:<br><br>
-    <ul>
-      <li>Muerte y gastos funerarios: 750 SMLDV</li>
-      <li>Gastos médicos: 800 SMLDV</li>
-      <li>Incapacidad permanente: 180 SMLDV</li>
-      <li>Gastos de transporte: 10 SMLDV</li>
-    </ul>
-    <br></br>
-    Cobertura va desde <%= @soat.start_date %> hasta <%= @soat.end_date %>
-    <br></br>
-    <%= link_to "Atrás", :admin_soats %>
-</div>
+<% unless @soat.pay? %>
+  El pago de tu Soat no se procesó
+<% else %>
+  <div>
+      <ul>
+        <li>Nombre: <%= @soat.user.full_name %></li>
+        <li>Email: <%= @soat.user.email %></li>
+        <li>Telefono: <%= @soat.user.phone_number %></li>
+        <li>Clase de Vehiculo: <%= @soat.vehicle.vehicle_class.description %></li>
+        <li>Placa: <%= @soat.vehicle.license_plate %></li>
+      </ul>
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <td>Valor Prima:</td>
+            <td><%= number_to_currency(@soat.premium_value) %></td>
+          </tr>
+          <tr>
+            <td>Fosyga:</td>
+            <td><%= number_to_currency(@soat.fosyga) %></td>
+          </tr>
+          <tr>
+            <td>Runt:</td>
+            <td><%= number_to_currency(@soat.runt) %></td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td><%= number_to_currency(@soat.total_value) %></td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      Coberturas Ofrecidas:<br><br>
+      <ul>
+        <li>Muerte y gastos funerarios: 750 SMLDV</li>
+        <li>Gastos médicos: 800 SMLDV</li>
+        <li>Incapacidad permanente: 180 SMLDV</li>
+        <li>Gastos de transporte: 10 SMLDV</li>
+      </ul>
+      <br></br>
+      Cobertura va desde <%= @soat.start_date %> hasta <%= @soat.end_date %>
+      <br></br>
+      <%= link_to "Atrás", :admin_soats %>
+  </div>
+<% end %>

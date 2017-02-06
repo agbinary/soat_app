@@ -5,7 +5,7 @@ class ChargesController < ApplicationController
 
   def create
     @soat = Soat.find(params[:soat])
-    @value = @soat.total_value
+    @value = @soat.total_value*100
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
