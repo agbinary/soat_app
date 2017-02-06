@@ -1,4 +1,4 @@
-Rails web application for calcu
+Rails web application for calculate Soats
 
 ## Dependencies
 
